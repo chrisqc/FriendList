@@ -15,6 +15,7 @@
 		83AD162A1D7EFC34006C8BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AD16281D7EFC34006C8BAE /* LaunchScreen.storyboard */; };
 		83AD16351D7EFC34006C8BAE /* _60906_FriendListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16341D7EFC34006C8BAE /* _60906_FriendListTests.m */; };
 		83AD16401D7EFC34006C8BAE /* _60906_FriendListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD163F1D7EFC34006C8BAE /* _60906_FriendListUITests.m */; };
+		83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16501D7F01B0006C8BAE /* QcFriendList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		83AD163B1D7EFC34006C8BAE /* 160906_FriendListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 160906_FriendListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD163F1D7EFC34006C8BAE /* _60906_FriendListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _60906_FriendListUITests.m; sourceTree = "<group>"; };
 		83AD16411D7EFC34006C8BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AD164F1D7F01B0006C8BAE /* QcFriendList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcFriendList.h; sourceTree = "<group>"; };
+		83AD16501D7F01B0006C8BAE /* QcFriendList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcFriendList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +104,10 @@
 		83AD16191D7EFC34006C8BAE /* 160906_FriendList */ = {
 			isa = PBXGroup;
 			children = (
-				83AD161D1D7EFC34006C8BAE /* AppDelegate.h */,
-				83AD161E1D7EFC34006C8BAE /* AppDelegate.m */,
-				83AD16201D7EFC34006C8BAE /* ViewController.h */,
-				83AD16211D7EFC34006C8BAE /* ViewController.m */,
-				83AD16231D7EFC34006C8BAE /* Main.storyboard */,
-				83AD16261D7EFC34006C8BAE /* Assets.xcassets */,
-				83AD16281D7EFC34006C8BAE /* LaunchScreen.storyboard */,
-				83AD162B1D7EFC34006C8BAE /* Info.plist */,
+				83AD164D1D7F0112006C8BAE /* Other */,
+				83AD164E1D7F0119006C8BAE /* ViewController */,
 				83AD161A1D7EFC34006C8BAE /* Supporting Files */,
+				83AD16521D7F01C3006C8BAE /* Model */,
 			);
 			path = 160906_FriendList;
 			sourceTree = "<group>";
@@ -117,6 +115,10 @@
 		83AD161A1D7EFC34006C8BAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				83AD16231D7EFC34006C8BAE /* Main.storyboard */,
+				83AD16261D7EFC34006C8BAE /* Assets.xcassets */,
+				83AD16281D7EFC34006C8BAE /* LaunchScreen.storyboard */,
+				83AD162B1D7EFC34006C8BAE /* Info.plist */,
 				83AD161B1D7EFC34006C8BAE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +140,33 @@
 				83AD16411D7EFC34006C8BAE /* Info.plist */,
 			);
 			path = 160906_FriendListUITests;
+			sourceTree = "<group>";
+		};
+		83AD164D1D7F0112006C8BAE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				83AD161D1D7EFC34006C8BAE /* AppDelegate.h */,
+				83AD161E1D7EFC34006C8BAE /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		83AD164E1D7F0119006C8BAE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83AD16201D7EFC34006C8BAE /* ViewController.h */,
+				83AD16211D7EFC34006C8BAE /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		83AD16521D7F01C3006C8BAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				83AD164F1D7F01B0006C8BAE /* QcFriendList.h */,
+				83AD16501D7F01B0006C8BAE /* QcFriendList.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */,
+				83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */,
 				83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */,
 				83AD161C1D7EFC34006C8BAE /* main.m in Sources */,
 			);

@@ -6,6 +6,11 @@
 //  Copyright © 2016年 Chrisqc. All rights reserved.
 //
 
+#define AccountKey @"account"
+#define PwdKey @"pwd"
+#define RmbPwdKey @"rmb_pwd"
+#define AutoLonginKey @"auto_login"
+
 #import "QcLoginViewController.h"
 @interface QcLoginViewController()
 @property (weak, nonatomic) IBOutlet UITextField *nameFile;
@@ -28,6 +33,20 @@
     //监听通知 监听文字的变化
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.nameFile];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChange) name:UITextFieldTextDidChangeNotification object:self.pwdFile];
+    
+    //读取上次配置
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.nameFile.text = [defaults objectForKey:AccountKey];
+    self.rmbPwdSwitch.on = [defaults boolForKey:PwdKey];
+    self.autoLoginSwitch.on = [defaults boolForKey:AutoLonginKey];
+    
+    if (self.rmbPwdSwitch.isOn) {
+        self.pwdFile.text = [defaults objectForKey:PwdKey];
+    }
+    
+    if (self.autoLoginSwitch.isOn) {
+        [self loginBtn];
+    }
 }
 
 //remove监听
@@ -57,6 +76,13 @@
     if ([self.nameFile.text isEqualToString:@"aaa"]) {
         [self performSegueWithIdentifier:@"login2contacts" sender:nil];
     }
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.nameFile.text forKey:AccountKey];
+    [defaults setObject:self.pwdFile.text forKey:PwdKey];
+    [defaults setBool:self.rmbPwdSwitch.isOn forKey:RmbPwdKey];
+    [defaults setBool:self.autoLoginSwitch.isOn forKey:AutoLonginKey];
+    [defaults synchronize];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

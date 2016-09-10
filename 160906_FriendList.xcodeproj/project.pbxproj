@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833D9E041D844786005B05FF /* QcContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833D9E031D844786005B05FF /* QcContactViewController.m */; };
 		83AD161C1D7EFC34006C8BAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD161B1D7EFC34006C8BAE /* main.m */; };
 		83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD161E1D7EFC34006C8BAE /* AppDelegate.m */; };
 		83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16211D7EFC34006C8BAE /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833D9E021D844786005B05FF /* QcContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcContactViewController.h; sourceTree = "<group>"; };
+		833D9E031D844786005B05FF /* QcContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcContactViewController.m; sourceTree = "<group>"; };
 		83AD16171D7EFC34006C8BAE /* 160906_FriendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 160906_FriendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD161B1D7EFC34006C8BAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83AD161D1D7EFC34006C8BAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				83AD16211D7EFC34006C8BAE /* ViewController.m */,
 				83D870461D842A17006A8AB3 /* QcLoginViewController.h */,
 				83D870471D842A17006A8AB3 /* QcLoginViewController.m */,
+				833D9E021D844786005B05FF /* QcContactViewController.h */,
+				833D9E031D844786005B05FF /* QcContactViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				83D870481D842A17006A8AB3 /* QcLoginViewController.m in Sources */,
 				83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */,
 				83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */,
+				833D9E041D844786005B05FF /* QcContactViewController.m in Sources */,
 				83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */,
 				83AD161C1D7EFC34006C8BAE /* main.m in Sources */,
 			);

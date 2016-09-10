@@ -115,7 +115,7 @@
         <!--联系人列表-->
         <scene sceneID="b3c-yK-uq8">
             <objects>
-                <tableViewController id="hLc-X0-XtG" sceneMemberID="viewController">
+                <tableViewController id="hLc-X0-XtG" customClass="QcContactViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uEO-b3-XBT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z9v-yB-6bJ" id="qu5-vk-qMq">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1k-Nq-NdE">
+                                            <rect key="frame" x="16" y="14" width="34" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OY-NL-dQI">
+                                            <rect key="frame" x="244" y="11" width="35" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="ibs-w1-sC9" kind="push" id="Sjg-1a-hxP"/>
@@ -139,6 +153,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="联系人列表" id="1AC-Yx-1vt">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="CXk-cV-X4B"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MPV-md-y53">
                             <connections>
                                 <segue destination="2AE-L3-hum" kind="push" id="wE7-1Z-Fhm"/>
@@ -151,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="820" y="435"/>
         </scene>
-        <!--View Controller-->
+        <!--查看联系人-->
         <scene sceneID="MiO-BL-hdg">
             <objects>
                 <viewController id="ibs-w1-sC9" sceneMemberID="viewController">
@@ -164,13 +179,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tp1-sa-R04"/>
+                    <navigationItem key="navigationItem" title="查看联系人" id="Tp1-sa-R04"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAX-zA-Rl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="755"/>
         </scene>
-        <!--View Controller-->
+        <!--添加联系人-->
         <scene sceneID="MVX-TI-pme">
             <objects>
                 <viewController id="2AE-L3-hum" sceneMemberID="viewController">
@@ -183,7 +198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UbQ-0s-tb6"/>
+                    <navigationItem key="navigationItem" title="添加联系人" id="UbQ-0s-tb6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cK-OT-p5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

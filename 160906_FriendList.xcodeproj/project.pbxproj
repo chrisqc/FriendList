@@ -16,6 +16,7 @@
 		83AD16351D7EFC34006C8BAE /* _60906_FriendListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16341D7EFC34006C8BAE /* _60906_FriendListTests.m */; };
 		83AD16401D7EFC34006C8BAE /* _60906_FriendListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD163F1D7EFC34006C8BAE /* _60906_FriendListUITests.m */; };
 		83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16501D7F01B0006C8BAE /* QcFriendList.m */; };
+		83D870481D842A17006A8AB3 /* QcLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D870471D842A17006A8AB3 /* QcLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		83AD16411D7EFC34006C8BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83AD164F1D7F01B0006C8BAE /* QcFriendList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcFriendList.h; sourceTree = "<group>"; };
 		83AD16501D7F01B0006C8BAE /* QcFriendList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcFriendList.m; sourceTree = "<group>"; };
+		83D870461D842A17006A8AB3 /* QcLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcLoginViewController.h; sourceTree = "<group>"; };
+		83D870471D842A17006A8AB3 /* QcLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +159,8 @@
 			children = (
 				83AD16201D7EFC34006C8BAE /* ViewController.h */,
 				83AD16211D7EFC34006C8BAE /* ViewController.m */,
+				83D870461D842A17006A8AB3 /* QcLoginViewController.h */,
+				83D870471D842A17006A8AB3 /* QcLoginViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D870481D842A17006A8AB3 /* QcLoginViewController.m in Sources */,
 				83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */,
 				83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */,
 				83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */,
@@ -526,6 +532,7 @@
 				83AD16461D7EFC34006C8BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83AD16471D7EFC34006C8BAE /* Build configuration list for PBXNativeTarget "160906_FriendListTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +541,7 @@
 				83AD16491D7EFC34006C8BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83AD164A1D7EFC34006C8BAE /* Build configuration list for PBXNativeTarget "160906_FriendListUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +550,7 @@
 				83AD164C1D7EFC34006C8BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

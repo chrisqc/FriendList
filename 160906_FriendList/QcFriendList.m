@@ -10,4 +10,18 @@
 
 @implementation QcFriendList
 
+- (void)encodeWithCoder:(NSCoder *)enCoder {
+    [enCoder encodeObject:self.name forKey:@"name"];
+    [enCoder encodeObject:self.phone forKey:@"phone"];
+    
+}
+
+- (id)initWithCoder:(NSCoder *)deCoder {
+    if (self = [super init]) {
+        self.name = [deCoder decodeObjectForKey:@"name"];
+        self.phone = [deCoder decodeObjectForKey:@"phone"];
+    }
+    return self;
+}
+
 @end

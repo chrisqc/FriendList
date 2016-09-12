@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QcFriendList : NSObject
+@interface QcFriendList : NSObject <NSCoding>
+
+@property (nonatomic,copy) NSString *name;
+@property (nonatomic,copy) NSString *phone;
 
 @end

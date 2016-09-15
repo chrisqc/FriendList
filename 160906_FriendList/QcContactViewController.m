@@ -9,6 +9,7 @@
 #define ContactsFilepath []
 
 #import "QcContactViewController.h"
+#import "QcContactCellTableViewCell.h"
 
 @interface QcContactViewController ()
 @property(nonatomic,strong) NSMutableArray *contancts;
@@ -49,6 +50,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    QcContactCellTableViewCell *cell = [QcContactCellTableViewCell cellWithTableView:tableView];
+    
+    cell.friendList = self.contancts [indexPath.row];
     
     return cell;
 }

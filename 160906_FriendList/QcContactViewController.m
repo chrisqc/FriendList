@@ -6,12 +6,15 @@
 //  Copyright © 2016年 Chrisqc. All rights reserved.
 //
 
-#define ContactsFilepath []
+
 
 #import "QcContactViewController.h"
 #import "QcContactCellTableViewCell.h"
+#import "QcAddViewController.h"
 
-@interface QcContactViewController ()
+#define ContactsFilepath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"contacts.data"]
+
+@interface QcContactViewController () <QcAddViewControllerDelegate>
 @property(nonatomic,strong) NSMutableArray *contancts;
 
 @end
@@ -35,13 +38,20 @@
 
 - (NSMutableArray *)contancts {
     if (_contancts == nil) {
-        _contancts = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"contacts.data"]];
+        _contancts = [NSKeyedUnarchiver unarchiveObjectWithFile:ContactsFilepath];
         if (_contancts == nil) {
             _contancts = [NSMutableArray array];
         }
     
     }
     return _contancts;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    id vc = segue.destinationViewController;
+    
+    QcAddViewController *addVc = vc;
+    addVc.delegate =self;
 }
 
 #pragma mark - 数据源
@@ -56,6 +66,18 @@
     cell.friendList = self.contancts [indexPath.row];
     
     return cell;
+}
+
+#pragma mark - 实现addview代理方法
+- (void)addViewController:(QcAddViewController *)addVc didAddContact:(QcFriendList *)contact {
+    
+    [self.contancts addObject:contact];
+    
+    NSLog(@"%@",self.contancts);
+    
+    [self.tableView reloadData];
+    
+    [NSKeyedArchiver archiveRootObject:self.contancts toFile:ContactsFilepath];
 }
 
 

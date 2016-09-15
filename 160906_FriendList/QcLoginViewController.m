@@ -6,12 +6,16 @@
 //  Copyright © 2016年 Chrisqc. All rights reserved.
 //
 
+
+
+#import "QcLoginViewController.h"
+
 #define AccountKey @"account"
 #define PwdKey @"pwd"
 #define RmbPwdKey @"rmb_pwd"
 #define AutoLonginKey @"auto_login"
 
-#import "QcLoginViewController.h"
+
 @interface QcLoginViewController()
 @property (weak, nonatomic) IBOutlet UITextField *nameFile;
 @property (weak, nonatomic) IBOutlet UITextField *pwdFile;

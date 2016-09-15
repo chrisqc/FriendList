@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		833D9E041D844786005B05FF /* QcContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833D9E031D844786005B05FF /* QcContactViewController.m */; };
+		8383D33B1D8AB3F6000B8B26 /* QcAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8383D33A1D8AB3F6000B8B26 /* QcAddViewController.m */; };
 		83AD161C1D7EFC34006C8BAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD161B1D7EFC34006C8BAE /* main.m */; };
 		83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD161E1D7EFC34006C8BAE /* AppDelegate.m */; };
 		83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16211D7EFC34006C8BAE /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		833D9E021D844786005B05FF /* QcContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcContactViewController.h; sourceTree = "<group>"; };
 		833D9E031D844786005B05FF /* QcContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcContactViewController.m; sourceTree = "<group>"; };
+		8383D3391D8AB3F6000B8B26 /* QcAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcAddViewController.h; sourceTree = "<group>"; };
+		8383D33A1D8AB3F6000B8B26 /* QcAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcAddViewController.m; sourceTree = "<group>"; };
 		83AD16171D7EFC34006C8BAE /* 160906_FriendList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 160906_FriendList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AD161B1D7EFC34006C8BAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83AD161D1D7EFC34006C8BAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,7 @@
 			children = (
 				83AD164D1D7F0112006C8BAE /* Other */,
 				83AD164E1D7F0119006C8BAE /* ViewController */,
+				83EFCC781D86FF8C007ECD55 /* VIew */,
 				83AD161A1D7EFC34006C8BAE /* Supporting Files */,
 				83AD16521D7F01C3006C8BAE /* Model */,
 			);
@@ -169,7 +173,8 @@
 				83D870471D842A17006A8AB3 /* QcLoginViewController.m */,
 				833D9E021D844786005B05FF /* QcContactViewController.h */,
 				833D9E031D844786005B05FF /* QcContactViewController.m */,
-				83EFCC781D86FF8C007ECD55 /* VIew */,
+				8383D3391D8AB3F6000B8B26 /* QcAddViewController.h */,
+				8383D33A1D8AB3F6000B8B26 /* QcAddViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				83AD16221D7EFC34006C8BAE /* ViewController.m in Sources */,
 				83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */,
 				833D9E041D844786005B05FF /* QcContactViewController.m in Sources */,
+				8383D33B1D8AB3F6000B8B26 /* QcAddViewController.m in Sources */,
 				83EFCC771D86FD95007ECD55 /* QcContactCellTableViewCell.m in Sources */,
 				83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */,
 				83AD161C1D7EFC34006C8BAE /* main.m in Sources */,

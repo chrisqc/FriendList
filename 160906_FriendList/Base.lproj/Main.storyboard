@@ -171,7 +171,7 @@
         <!--查看联系人-->
         <scene sceneID="MiO-BL-hdg">
             <objects>
-                <viewController id="ibs-w1-sC9" sceneMemberID="viewController">
+                <viewController id="ibs-w1-sC9" customClass="QcEditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="w0x-fR-G9p"/>
                         <viewControllerLayoutGuide type="bottom" id="J6h-6L-wDN"/>
@@ -179,9 +179,63 @@
                     <view key="view" contentMode="scaleToFill" id="yYT-C1-hA5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aka-8J-6el" userLabel="nameView">
+                                <rect key="frame" x="40" y="109" width="240" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3D7-OK-9bn">
+                                        <rect key="frame" x="65" y="12" width="167" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f15-zM-dOX">
+                                        <rect key="frame" x="0.0" y="14" width="65" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NZ-LP-m4o" userLabel="phoneView">
+                                <rect key="frame" x="40" y="181" width="240" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入电话" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3X5-DV-mzc">
+                                        <rect key="frame" x="65" y="12" width="167" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOS-5x-6ss">
+                                        <rect key="frame" x="0.0" y="14" width="65" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSt-Uc-l3i">
+                                <rect key="frame" x="145" y="262" width="30" height="30"/>
+                                <state key="normal" title="确定"/>
+                                <connections>
+                                    <action selector="save" destination="ibs-w1-sC9" eventType="touchUpInside" id="3om-wL-c4Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="查看联系人" id="Tp1-sa-R04"/>
+                    <navigationItem key="navigationItem" title="查看联系人" id="Tp1-sa-R04">
+                        <barButtonItem key="rightBarButtonItem" title="编辑" id="pR0-GF-n6g">
+                            <connections>
+                                <action selector="edit:" destination="ibs-w1-sC9" id="dMl-lD-rFi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameField" destination="3D7-OK-9bn" id="g7T-W8-lMI"/>
+                        <outlet property="phoneField" destination="3X5-DV-mzc" id="GvO-qh-daF"/>
+                        <outlet property="saveBtn" destination="WSt-Uc-l3i" id="7tT-fp-rE8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAX-zA-Rl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

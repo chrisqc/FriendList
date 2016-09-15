@@ -20,6 +20,7 @@
 		83AD16511D7F01B0006C8BAE /* QcFriendList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AD16501D7F01B0006C8BAE /* QcFriendList.m */; };
 		83D870481D842A17006A8AB3 /* QcLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D870471D842A17006A8AB3 /* QcLoginViewController.m */; };
 		83EFCC771D86FD95007ECD55 /* QcContactCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EFCC761D86FD95007ECD55 /* QcContactCellTableViewCell.m */; };
+		83F4453D1D8AE6D100B82D7E /* QcEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F4453C1D8AE6D100B82D7E /* QcEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		83D870471D842A17006A8AB3 /* QcLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcLoginViewController.m; sourceTree = "<group>"; };
 		83EFCC751D86FD95007ECD55 /* QcContactCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcContactCellTableViewCell.h; sourceTree = "<group>"; };
 		83EFCC761D86FD95007ECD55 /* QcContactCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcContactCellTableViewCell.m; sourceTree = "<group>"; };
+		83F4453B1D8AE6D100B82D7E /* QcEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QcEditViewController.h; sourceTree = "<group>"; };
+		83F4453C1D8AE6D100B82D7E /* QcEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QcEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				833D9E031D844786005B05FF /* QcContactViewController.m */,
 				8383D3391D8AB3F6000B8B26 /* QcAddViewController.h */,
 				8383D33A1D8AB3F6000B8B26 /* QcAddViewController.m */,
+				83F4453B1D8AE6D100B82D7E /* QcEditViewController.h */,
+				83F4453C1D8AE6D100B82D7E /* QcEditViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 				8383D33B1D8AB3F6000B8B26 /* QcAddViewController.m in Sources */,
 				83EFCC771D86FD95007ECD55 /* QcContactCellTableViewCell.m in Sources */,
 				83AD161F1D7EFC34006C8BAE /* AppDelegate.m in Sources */,
+				83F4453D1D8AE6D100B82D7E /* QcEditViewController.m in Sources */,
 				83AD161C1D7EFC34006C8BAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

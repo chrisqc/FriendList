@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Chrisqc. All rights reserved.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface QcContactViewController : UITableViewController
 
